@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-3xl font-bold text-center mt-5">All Universe Hub</h1>
+    </header>
+    <main>
+
+        <section>
+
+            <div class="text-center my-10" id="spinner">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+            <div class="text-center my-5 " id="showAll-btn-field">
+                <button id="show-all-btn" onclick="showAllCards()" class="btn btn-neutral ">Show All</button>
+            </div>
+
+        </section>
+
+        <!-- You can open the modal using ID.showModal() method -->
+
+        <!-- <dialog id="my_modal"
+            class="modal flex justify-between max-w-screen-lg items-center mx-auto bg-white h-4/6 my-auto p-10 outline-none">
+
+            <span><i class="fa-regular fa-circle-xmark fa-2xl absolute top-4 right-0 cursor-pointer"
+                    id="close-modal"></i></span>
+
+            <div class="flex-1">
+                <div method="dialog" class="modal-box bg-red-100 border-2 border-red-400">
+
+                    <h3 id="modal-title" class="font-bold text-lg"></h3>
+
+                    <div class="flex gap-2 justify-around items-center my-5">
+                        <div class="bg-white w-24 h-20 rounded-lg pt-4 font-bold">
+                            <p id="price" class="text-green-500 text-center"></p>
+                            <p id="plan" class="text-green-500 text-center"></p>
+                        </div>
+                        <div class="bg-white w-24 h-20 rounded-lg pt-4 font-bold">
+                            <p id="price-2" class="text-orange-500 text-center"></p>
+                            <p id="plan-2" class="text-orange-500 text-center"></p>
+                        </div>
+                        <div class="bg-white w-24 h-20 rounded-lg  font-bold">
+                            <p id="price-3" class="text-red-500 text-center"></p>
+                            <p id="plan-3" class="text-red-500 text-center"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-around items-center">
+                        <div>
+                            <h1 class="text-xl font-bold">Features</h1>
+                            <div id="features">
+
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold">Integrations</h1>
+                            <div id="integrations">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex-1">
+                <div method="dialog" class="modal-box bg-white border-2 border-slate-400 ">
+                    <div>
+                        <img id="modal-image" src="" alt="" srcset="">
+                        <p class="text-center font-bold text-2xl mt-2" id="example-1"></p>
+                        <p class="text-center font-normal" id="example-2"></p>
+                    </div>
+                </div>
+            </div>
+        </dialog> -->
+
+
+        <dialog id="my_modal" class="modal">
+            <form method="dialog" class="modal-box flex justify-between max-w-screen-lg items-center ">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <div class="flex-1">
+                    <div method="dialog" class="modal-box bg-red-100 border-2 border-red-400">
+
+                        <h3 id="modal-title" class="font-bold text-lg"></h3>
+
+                        <div class="flex gap-2 justify-around items-center my-5">
+                            <div class="bg-white w-24 h-20 rounded-lg pt-4 font-bold">
+                                <p id="price" class="text-green-500 text-center"></p>
+                                <p id="plan" class="text-green-500 text-center"></p>
+                            </div>
+                            <div class="bg-white w-24 h-20 rounded-lg pt-4 font-bold">
+                                <p id="price-2" class="text-orange-500 text-center"></p>
+                                <p id="plan-2" class="text-orange-500 text-center"></p>
+                            </div>
+                            <div class="bg-white w-24 h-20 rounded-lg  font-bold">
+                                <p id="price-3" class="text-red-500 text-center"></p>
+                                <p id="plan-3" class="text-red-500 text-center"></p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex justify-around items-center">
+                            <div>
+                                <h1 class="text-xl font-bold">Features</h1>
+                                <div id="features">
+
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-bold">Integrations</h1>
+                                <div id="integrations">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="flex-1">
+                    <div method="dialog" class="modal-box bg-white border-2 border-slate-400 ">
+                        <div>
+                            <img id="modal-image" src="" alt="" srcset="">
+                            <p class="text-center font-bold text-2xl mt-2" id="example-1"></p>
+                            <p class="text-center font-normal" id="example-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
